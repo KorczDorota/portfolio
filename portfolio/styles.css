@@ -92,7 +92,6 @@ li.active{
 	padding: 10px 10px 0px 5px;
 }
 li:hover{
-	/*margin: 5px auto;*/
 	content: '';
 	position: relative;
 	padding: 5px 10px;
@@ -184,4 +183,31 @@ div.box .button	{
 	border-top: 1px double rgba(94, 255, 255, 0.7);
 	border-left:1px double rgba(94, 255, 255, 0.6);
 	border-right:1px double rgba(94, 255, 255, 0.6);
+}
+@media only screen and (max-width: 600px){
+	.flex_content_wrapper {
+	display: flex;
+	flex-direction: column;
+	}
+
+	.flex_nav{
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	}
+
+	.flex_content {
+		background-color: black;
+		min-width: calc(100% - 150px);
+		display: flex;
+		flex-direction: column;
+}
+.flex_content2 {
+	width: 100%;
+}
+
+.flex-col-9 {
+	width: 100%;
+}
 }
